@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+.main-container {
+    background-image: url('../img/gesProy-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.cont-login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    max-width: 35rem;
+    border-radius: .6rem;
+    box-shadow: 2px 0px 15px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cont-login .side-design {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.66)), url("../img/BG-DESIGN.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .6rem 0 0 .6rem;
+    padding: 3rem 1.5rem;
+}
+
+.cont-login .side-design img.logo-sen {
+    margin-top: 1rem;
+    width: 6rem;
+}
+
+.cont-login .side-login {
+    background-image: url("../img/BG-FORM.png");
+    padding: 2rem;
+    background-color: #ececec;
+    border-radius: 0 .6rem .6rem 0;
+}
+
+.side-login .login-title {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #656565;
+    text-transform: uppercase;
+}
+
+.side-design .sen-title {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #d6d6d6;
+    text-transform: uppercase;
+}
+
+.side-design .system-title {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #d6d6d6;
+}
+
+
+.cstm-btn {
+    background-color: #29b674;
+    border-color: #29b674;
+    text-transform: uppercase;
+}
+
+.cstm-btn:hover {
+    background-color: #208958;
+    border-color: #208958;
+}
+
+.cstm-link {
+    text-decoration: none;
+}
+
+.cstm-link:hover {
+    text-decoration: underline;
+}
+
+
+.cstm-btn .btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    background-color: #208958;
+    border-color: #208958;
+}
+
+#input-user::placeholder,
+#input-pwd::placeholder {
+    color: black;
+    opacity: 0.4;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .cont-login {
+        background-image: url("../img/BG-FORM.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .cont-login .side-design {
+        background: none;
+
+        padding: 3rem 1.5rem;
+    }
+
+    .cont-login .side-design {
+        background: none;
+        padding: 0rem;
+    }
+
+    .cont-login .side-design img.logo-sen {
+        margin-top: 1rem;
+        width: 3rem;
+    }
+
+    .cont-login .side-login {
+        background: none;
+        padding: 0 2rem 2rem 2rem;
+        border-radius: 0 0.6rem 0.6rem 0;
+    }
+
+    .side-design .system-title {
+        color: #656565;
+    }
+
+    .side-design .sen-title {
+        color: #656565;
+    }
+
+    .side-login .login-title {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+}
