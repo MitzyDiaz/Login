@@ -18,7 +18,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 35%;
+    width: 40%;
     max-width: 35rem;
     border-radius: .6rem;
     box-shadow: 2px 0px 15px 4px rgba(0, 0, 0, 0.2);
@@ -109,7 +109,9 @@ body {
         background-image: url("../img/BG-FORM.png");
         background-repeat: no-repeat;
         background-size: cover;
+        width: 50%;
     }
+    
 
     .cont-login .side-design {
         background: none;
